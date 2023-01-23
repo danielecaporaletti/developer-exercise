@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>Boxes Are Easy!</title>
+    <link rel='stylesheet' href='box-styles.css'/>
+  </head>
+  <body>
+
+    <h1>Headings Are Block Elements</h1>
+
+    <p>
+        Paragraphs are blocks, too. <em>However</em>, &lt;em&gt; and &lt;strong&gt; elements are not. They are <strong>inline</strong> elements.
+    </p>
+
+    <p>
+        Block elements define the flow of the HTML document, while inline elements do not.
+    </p>
+
+    <p>
+        The “CSS box model” is a set of rules that determine the dimensions of every element in a web page. It gives each box (both inline and block) four properties:
+        <ul>
+            <li><strong>Content - </strong>The text, image, or other media content in the element.</li>
+            <li><strong>Padding - </strong>The space between the box's content and its border.</li>
+            <li><strong>Border - </strong>The line between the box's padding and margin.</li>
+            <li><strong>Margin - </strong>The space between the box and surrounding boxes.</li>
+        </ul>
+        <img src="images/bordi.png" alt="immagine con i il content, padding, border e margin" width="533" height="413,5">
+    </p>
+
+    <p>
+        I margini e il riempimento possono ottenere la stessa cosa in molte situazioni, rendendo difficile determinare quale sia la scelta "giusta". I motivi più comuni per cui dovresti scegliere uno piuttosto che l'altro sono:
+        <ul>
+            <li>Il padding di un box ha uno sfondo, mentre i margini sono sempre trasparenti.</li>
+            <li>La spaziatura interna è inclusa nell'area di clic di un elemento, mentre i margini non lo sono.</li>
+            <li>I margini collassano verticalmente, mentre il padding no (ne parleremo più approfonditamente nella prossima sezione).</li>
+        </ul>
+        <img src="images/bordi.png" alt="immagine con i il content, padding, border e margin" width="533" height="413,5">
+    </p>
+
+    <p>
+        L'unica vera differenza tra a "div" e "span" è che il primo è per i contenuti a livello di blocco mentre il secondo è pensato per i contenuti in linea.
+    </p>
+
+    <div>Button</div>
+
+  </body>
+</html>

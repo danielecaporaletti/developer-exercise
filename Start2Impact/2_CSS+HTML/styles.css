@@ -1,0 +1,45 @@
+/**
+Questo imposta la nostra dimensione del carattere di base per il documento su 18px, 
+quindi dice che i nostri <h1>elementi dovrebbero essere il doppio di quella dimensione e 
+i nostri <h2>dovrebbero essere 1,6 volte più grandi. 
+Se noi (o l'utente) desiderassimo ingrandire o ridurre il carattere di base, 
+le emunità consentirebbero di ridimensionare di conseguenza l'intera pagina.
+*/
+
+body {
+  color: #414141;               /* Dark gray */
+  background-color: #EEEEEE;    /* Light gray */
+  font-size: 18px;
+}
+  
+h1 {
+  font-size: 2em;
+}
+  
+h2 {
+  font-size: 1.6em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-weight: normal; /*NO GRASSETTO O ALTRO*/
+}
+
+ul {
+    list-style-type: circle;
+}
+  
+ol {
+    list-style-type: lower-roman;
+}
+
+/*RIMUOVERE SOTTOLIENATURA DAI LINK*/
+a {
+  text-decoration: none;
+}
+
+/*ALLINEAMENTO DEL TESTO*/
+p {
+    text-align: left; /*right, center, justify*/
+}
+
