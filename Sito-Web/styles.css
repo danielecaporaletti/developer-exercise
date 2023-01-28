@@ -10,6 +10,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-bottom: 200px;
 }
 
 .homesx {
@@ -95,5 +96,116 @@
     margin-top: 50px;
 }
 
+.about-me {
+    display: flex;
+}
+
+.testo {
+    width: 60%;
+}
+
+.about-me-title {
+    color: #4A4DF6;
+    display: flex;
+    font-size: 40px;
+    margin-top: 70px;
+    margin-left: 100px;
+}
+
+.about-me-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    margin-top: 150px;  
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+.photo-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.my-photo {
+    width: 700px;
+    height: 905px;
+    border-radius: 30px;
+    margin-bottom: 300px;
+}
+
+.case-studio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.sopra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.sotto {
+    display: flex;
+
+}
+
+.titolo-cas-stdio {
+    color: #4A4DF6;
+    display: flex;
+    font-size: 40px;
+    margin-top: 70px;
+    margin-left: 100px;
+}
+
+.img1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 250px;
+}
+
+.cose {
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+}
+
+.sotto {
+    background-color: #e2e2e2;
+    width: 1720px;
+    height: 780px;
+}
+
+.contacts2 {
+    background-color: rgb(43, 43, 43);
+    margin-top: 100px;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+}
+
+.perche {
+    color: white;
+    padding-top: 60px;
+    font-size: 40px;
+}
 
 
