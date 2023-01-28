@@ -1,0 +1,11 @@
+- Block element        --> PRENDE L'INTERA LINEA <p>
+- Inline-block element --> PRENDE SOLO LO SPAZIO CHE GLI SERVE <img>
+- Inline element       --> NON PRENDE SPAZIO <strong>
+
+Per passare da uno all'altro bisogna scrivere in CSS:
+.class {
+    display: inline-block;
+}
+.class {
+    display: block;
+}
