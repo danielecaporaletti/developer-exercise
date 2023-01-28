@@ -28,6 +28,11 @@
         }
         .thumbnail {
             width: 300px;
+            border-radius: 15px;
+        }
+        .video-info-grid {
+            display: grid;
+            grid-template-columns: 50px 1fr;
         }
         .video-title {
             font-size: 14px;
@@ -44,17 +49,14 @@
             margin-bottom: 4px;
         }
         .channel-picture {
-            display: inline-block;
-            width: 50px;
-            vertical-align: top;
+
         }
         .profile-picture {
             width: 40px;
             border-radius: 50px;
         }
         .video-info {
-            display: inline-block;
-            width: 200px;
+
         }
     </style>
 </head>
@@ -65,7 +67,7 @@
         <div class="thumbnail-row">
             <img class="thumbnail" src="./images/thumbnail-1.webp" alt="">
         </div>
-        <div>
+        <div class="video-info-grid">
             <div class="channel-picture">
                 <img class="profile-picture" src="./images/channel-1.jpeg" alt="">
             </div>
@@ -87,7 +89,7 @@
         <div class="thumbnail-row">
             <img class="thumbnail" src="./images/thumbnail-2.webp" alt="">
         </div>
-        <div>
+        <div class="video-info-grid">
             <div class="channel-picture">
                 <img class="profile-picture" src="./images/channel-2.jpeg" alt="">
             </div>
