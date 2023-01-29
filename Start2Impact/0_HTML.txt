@@ -9,3 +9,7 @@ Per passare da uno all'altro bisogna scrivere in CSS:
 .class {
     display: block;
 }
+
+Da ricordarsi anche 
+- flex-shrink: 0; = don't shrink
+- width: 0; = shrink
