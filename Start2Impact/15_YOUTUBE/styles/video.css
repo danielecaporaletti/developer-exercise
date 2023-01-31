@@ -4,6 +4,25 @@
     column-gap: 16px;
     row-gap: 40px;
 }
+
+@media (max-width: 750px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 751px) and (max-width: 999px){
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px){
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
 .video-preview {
 
 }
@@ -19,10 +38,7 @@
     font-family: roboto, Arial;
     font-size: 12px;
     font-weight: 500;
-    padding-left: 3px;
-    padding-right: 3px;
-    padding-top: 3px;
-    padding-bottom: 2px;
+    padding: 3px 3px 2px 3px;
     border-radius: 1px;
     background-color: black;
     color: white;
