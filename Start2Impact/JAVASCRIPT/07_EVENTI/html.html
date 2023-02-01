@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        input {
+            display: block;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <div>
+            <label for="fname">Nome</label>
+            <input id="fname" type="text">
+        </div>
+        <div>
+            <label for="lname">Cognome</label>
+            <input id="lname" type="text">
+        </div>
+        <div>
+            <input id="submit" type="submit">
+        </div>
+    </form>
+    <p></p>
+
+    <script>
+        const form = document.querySelector('form');
+        const nome = document.getElementById('fname');
+        const cognome = document.getElementById('lname');
+        const paragrafo = document.querySelector('p');
+
+        form.onsubmit = function (e) {
+            if (nome.value === '' || cognome.value === '') {
+                e.preventDefault();
+                paragrafo.textContent = 'You need to fill in both names!';
+            }
+        }
+
+        nome.onfocus = function () {
+            console.log("sono in focus");
+        }
+
+
+        nome.addEventListener('focus', ()=>{
+            console.log("Ho schiacciato");
+        });
+
+    </script>
+    
+</body>
+</html>

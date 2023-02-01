@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Tutti i tipi di numeri: interi, float, double ecc sono tutti considerati come number 
+    -->
+    <script>
+        let numero1 = 34.23554;
+        console.log(typeof numero1); //STAMPA number
+    </script>
+
+    <!--
+        METODO toFixed() per decidere quanti numeri opo la virgola avere
+    -->
+    <script>
+        let numero2 = 3.47565484;
+        console.log(numero2.toFixed(2)); //STAMPA CON 2 NUMERI DOPO LA VIRGOLA
+    </script>
+
+    <!--
+        CASTING
+    -->
+    <script>
+        let numero3 = '43' + 3;
+        console.log(numero); //STAMPA 433 PERCHE' numero3 E' UNA STRINGA
+        let numero4 = '43';
+        console.log(number(numero4) + 3); //STAMPA 64 PERCHE' C'E' UNA CONVERSIONE
+    </script>
+
+    <!--
+        OPERATORI DI COMPARAZIONE [=== , !==] & [== !=]
+    -->
+    <script>
+        let numero5 = '10';
+        let numero6 = 10;
+        console.log(numero5 == numero6); //STAMPA TRUE
+        console.log(numero5 === numero6); //STAMPA FALSE
+    </script>
+</body>
+</html>

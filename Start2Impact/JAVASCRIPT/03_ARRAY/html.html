@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        STAMPARE TUTTI GLI ELEMNTI CON IL FOR
+    -->
+    <script>
+        let data1 = ['Milano', 'Torino', 'Roma', 'Venezia', 'Napoli'];
+
+        for(i=0; i<data1.length; i++){
+            console.log(data[i]);
+        }
+    </script>
+    <!--
+        CONVERTIRE STRINGHE E ARRAY split() join()
+    -->
+    <script>
+        let citta = 'Milano,Torino,Roma,Venezia,Napoli';
+        let dataNuova = citta.split(','); //DIVIDE DOVE C'E' UNA VIRGOLA
+        let data = ['Milano', 'Torino', 'Roma', 'Venezia', 'Napoli'];
+        let cittaNuova = data.join(','); //UNISCE DOVE C'E' UNA VIRGOLA
+    </script>
+    <!--
+        AGGIUNGERE E RIMUOVERE ELEMENTI push() pop() unshift() shift()
+    -->
+    <script>
+        let data2 = ['Milano', 'Torino', 'Roma', 'Venezia', 'Napoli'];
+        data.push('Firenze'); //AGGIUNGE IN FONDO 'Firenze'
+        console.log(data2);
+        data2.pop(); //ELIMINA L'ULTIMO ELEMENTO
+        console.log(data2);
+        data2.unshift('Firenze'); //AGGIUNGE ALL'INIZIO Firenze 
+        console.log(data2);
+        data2.shift(); //ELIMINA IL PRIMO ELEMNTO
+        console.log(data2);
+
+    </script>
+    
+</body>
+</html>

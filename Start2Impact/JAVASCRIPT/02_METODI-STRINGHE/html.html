@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        UNA STRINGA E' UN OGETTO
+    -->
+    <script>
+        let stringa1 = "Questo è un corso di javascript completo e aggiornato";
+    </script>
+    <!--
+        LUNGHEZZA DI UNA STRINGA
+    -->
+    <script>
+        let stringa2 = "Questo è un corso di javascript completo e aggiornato";
+        console.log(stringa2.length); //STAMPA LUNGHEZZA STRINGA
+    </script>
+    <!--
+        OTTENERE UN CARATTERE SPECIFICO, TRATTANDOLA COME UN ARRAY
+    -->
+    <script>
+        let stringa3 = "Questo è un corso di javascript completo e aggiornato";
+        console.log(stringa3[0]); //STAMPA "Q"
+        console.log(string[stringa.length-1]); //STAMPA "o"
+    </script>
+    <!--
+        PRENDERE UNA PARTE DI STRINGA: indexOf slice
+    -->
+    <script>
+        let stringa4 = "Questo è un corso di javascript completo e aggiornato";
+        console.log(stringa4.indexOf("corso")); //STAMPA 12
+        let indexCorso = stringa4.indexOf("corso")
+        console.log(stringa4.slice(indexCorso)); //STAMPA: "corso di javascript completo e aggiornato"
+    </script>
+    <!--
+        CAMBIARE IL CASE DI UNA STRINGA: toUpperCase & toLowerCase
+    -->
+    <script>
+        let stringa5 = "Questo";
+        console.log(stringa5.toLowerCase); //STAMPA: "questo"
+        console.log(stringa5.toUpperCase); //STAMPA: "QUESTO"
+    </script>
+    <!--
+        CAMBIARE PARTI DI UNA STRINGA CON replace
+    -->
+    <script>
+        let stringa6 = "Questo è un corso di javascript completo e aggiornato";
+        console.log(stringa6.replace('corso', 'CIAO')); //STAMPA: "Questo è un CIAO di Javascript ..."
+    </script>
+    
+</body>
+</html>

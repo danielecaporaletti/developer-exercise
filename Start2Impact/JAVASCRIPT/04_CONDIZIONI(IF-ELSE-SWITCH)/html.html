@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        IF - ELSE IF - ELSE
+    -->
+    <script>
+        let nome = 'Luca';
+        let numero = 15;
+
+        if(nome == 'Luca'){
+            console.log('Ciao Luca');
+        }else if(nome == 'Marco'){
+            console.log('Ciao Marco');
+        }else{
+            console.log('Ciao persona anonima');
+        }
+    </script>
+
+    <!--
+        OPERATORI LOGICI AND (&&) OR (||) E NOT (!) 
+    -->
+    <script>
+        let nome1 = 'Luca';
+        let numero1 = 16;
+
+        if(numero < 20 && numero % 2 == 0){
+            console.log('ok');
+        }else{
+            console.log('non va bene');
+        }
+    </script>
+
+    <!--
+        SWITCH STATEMENT
+    -->
+    <script>
+        let nome2 = 'Luca';
+    
+        switch (nome2) {
+            case 'Luca':
+                console.log('Ciao Luca');
+                break;
+            case 'Marco':
+                console.log('Ciao Marco');
+                break;
+            default:
+                console.log('Non so il tuo nome');
+                break;
+        }
+    </script>
+
+    <!--
+        TERNARY OPERATOR (CONDIZIONE) ? si : no
+    -->
+    <script>
+        let numero3 = 15;
+        let nome3 = (numero<20) ? 'Luca' : 'Leonardo';
+
+        console.log(nome3);
+    </script>
+    
+</body>
+</html>
