@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
     <style>
@@ -28,27 +30,38 @@
     </form>
     <p></p>
 
+    <!--
+        e.preventDefault
+        Event bubling e capturing (stop propagation) e.stopPropagation
+        Event delegation 
+    -->
+
     <script>
         const form = document.querySelector('form');
         const nome = document.getElementById('fname');
         const cognome = document.getElementById('lname');
         const paragrafo = document.querySelector('p');
 
+        nome.onclick = function () {
+            console.log("Ho premuto sulla label Nome");
+        }
+
+        nome.addEventListener('focus', (e)=>{
+            console.log("Sono in focus sulla label Nome con questo evento: ");
+            console.log(e);
+            console.log("Su questo target: ");
+            console.log(e.target);
+            console.log("Con questo valore: ");
+            console.log(e.target.value);
+        });
+
+        //form.onsubmit VUOL DIRE QUANDO IL FORM VIENE INVIATO
         form.onsubmit = function (e) {
             if (nome.value === '' || cognome.value === '') {
-                e.preventDefault();
+                e.preventDefault(); //QUESTO PREVIENE IL DEFAULT, EVITI CHE IL FORM VIENE INVIATO
                 paragrafo.textContent = 'You need to fill in both names!';
             }
         }
-
-        nome.onfocus = function () {
-            console.log("sono in focus");
-        }
-
-
-        nome.addEventListener('focus', ()=>{
-            console.log("Ho schiacciato");
-        });
 
     </script>
     

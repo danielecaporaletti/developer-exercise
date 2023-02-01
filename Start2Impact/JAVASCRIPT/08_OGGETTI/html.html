@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--
+        UN OGGETTO PUO' AVERE PROPRIETA' E METODI
+    -->
+    <script>
+        const persona = {
+            nome: `Luca`,
+            cognome: `Rossi`,
+            genere: `Maschio`,
+            eta: 25,
+            interessi: [`snowboard`, `basket`, `picnic al parco`],
+            indirizzo: {
+                via: `Piazza Roma`,
+                cap: `09872`,
+                provincia: `MI`,
+                citta: `Milano`
+            },
+            saluta: function(){
+                return `Ciao sono ${persona.nome}`;
+            },
+            thisEta: function(){
+                return `Ecco la mia età ${this.eta}`;
+            }
+        }
+
+        // DOT NOTATION (CON I PUNTI)
+        console.log(persona.nome);
+        console.log(persona.eta);
+        console.log(persona.interessi[1]);
+        console.log(persona.indirizzo.provincia);
+        console.log(persona.saluta());
+
+        // BRACKET NOTATION (CON LE PARENTESI QUADRE)
+        console.log(persona[`nome`]);
+        console.log(persona[`eta`]);
+        console.log(persona[`interessi`][1]);
+        console.log(persona[`indirizzo`][`provincia`]);
+        console.log(persona.saluta());
+
+        /*
+         * LA BRACKET NOTATION E' COMODA SOLO IN UN CASO, QUANDO C'E' QUALCOSA DI DINAMICO
+        */
+       const chiave = `genere`;
+       console.log(persona[chiave]); //COME SCRIVERE persona[`genere`] STAMPA: `Maschio`
+
+       // AGGIORNARE UN OGGETTO
+       persona.nome = `Paolo`;
+       console.log(persona.nome); //STAMPA `Paolo` n.b. POSSO CAMBIARE UNA PROPRIETA' DI UN OGGETTO CONST
+       persona.colorPreferito = `blu`; //AGGIUNGI LA PROPRIETA' COLORE PREFERITO ALL'OGGETTO 
+       console.log(persona);
+
+       //IL this PRENDE LA PROPRIETA' DALL'OGGETTO IN CUI E' DENTRO
+       console.log(thisEta());
+    </script>
+    
+</body>
+</html>
