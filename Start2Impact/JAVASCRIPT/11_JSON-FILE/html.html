@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--
+        JSON (JavaScript Object Notation) E' UNO STANDARD PER METTERE DATI, CON FORMATO TEXT BASE. QUESTO RAPPRESENTA
+        UNA STRUTTURA DI DATI BASATA SULLA SINTASSI DEGLI OGGETTI JAVASCRIPT.
+
+        QUINDI:
+        QUANDO PASSIAMO JSON, IN REALTA' PASSIAMO UNA STRINGA (ECCO PERCHE' TEXT BASE) CHE VERRA' PARSATA (to parse) IN DATI EFFETTIVI.
+        QUINDI:
+        NOI ABBIAMO IL NOSTRO OGGETTO JSON SCRITTO IN UN CERTO MODO, DIVENTA UNA STRINGA, LO PASSIAMO DALL'ALTRA PARTE 
+        ED E' SCRITTO IN UN CERTO MODO COSI' CHE POSSIAMO RITRASFORMARLO PER OTTENERE I NOSTRI DATI DA LEGGERE
+    -->
+
+    <script>
+
+        //L'URL DOVE ANDIAMO A PRENDERE IL FILE
+        let requestURL = `./classe.json`;
+        //FACCIAMO UNA NUOVA REQUEST DI TIPO ... (SI SCRIVE COSI' E BASTA)
+        let request = new XMLHttpRequest();
+        // APRIAMO QUESTA RICHIESTA E DICIAMO CHE E' UNA GET (CI SONO GET E POST)
+        // C'E' SCRITTO: USAIMO IL METODO GET IN QUESTO URL
+        request.open(`GET`, requestURL);
+        // ANIAMO A SETTARE IL TIPO DI RISPOSTA (CHE E' UN JSON)
+        request.responseType = `json`;
+        // INFINE LO INVIAMO
+        request.send();
+
+
+        // DOBBIAMO ASPETTARE CHE CI TORNI INDIETRO IL FILE
+        // onload E' L'EVENTO E SULL'EVENTO onload MI FAI QUESTA FUNZIONE ANONIMA
+        // VAI A CREARE UNA COSTANTE CLASSE CHE E' UGUALE ALLA RISPOSTA DELLA RICHIESTA
+        // POSSIAMO VISIONARLA ORA COME UN OGGETTO, E' STATO PARSATO, NON E' PIU' JSON
+        request.onload = function() {
+            const classe = request.response;
+            console.log(classe);
+            // VOGLIAMO PRENDERE IL COGNOME DELL'INSEGNANTE NUMERO 2
+            console.log(classe.insegnanti[1].cognome);
+        }
+
+    </script>
+    
+</body>
+</html>

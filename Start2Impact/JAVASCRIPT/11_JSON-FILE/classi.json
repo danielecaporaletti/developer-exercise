@@ -1,0 +1,74 @@
+[
+    {
+        "nome": "1A",
+        "numeroAlunni": 21,
+        "ScuolaSabato": false,
+        "scuola": "Scuola Elementare Miao",
+        "insegnanti": [
+            {
+                "nome": "Anna",
+                "cognome": "Blu",
+                "materieInsegnate": ["Stroia", "Italiano", "Geografia"]
+            },
+            {
+                "nome": "Ludovica",
+                "cognome": "Rossi",
+                "materieInsegnate": ["Matematica", "Geometria"]
+            }   
+        ],
+        "alunni": [
+            {
+                "nome": "Marco",
+                "cognome": "Qwerty"
+            },
+            {
+                "nome": "Leonardo",
+                "cognome": "Verdi"
+            },
+            {
+                "nome": "Maria",
+                "cognome": "Gailli"
+            }
+        ],
+        "orari": {
+            "mattina": ["Stroia", "Matematica"],
+            "pomeriggio": ["Italiano", "Geografia"]
+        }
+    },
+    {
+        "nome": "4A",
+        "numeroAlunni": 21,
+        "ScuolaSabato": false,
+        "scuola": "Scuola Elementare Miao",
+        "insegnanti": [
+            {
+                "nome": "Anna",
+                "cognome": "Blu",
+                "materieInsegnate": ["Stroia", "Italiano", "Geografia"]
+            },
+            {
+                "nome": "Ludovica",
+                "cognome": "Rossi",
+                "materieInsegnate": ["Matematica", "Geometria"]
+            }   
+        ],
+        "alunni": [
+            {
+                "nome": "Marco",
+                "cognome": "Qwerty"
+            },
+            {
+                "nome": "Leonardo",
+                "cognome": "Verdi"
+            },
+            {
+                "nome": "Maria",
+                "cognome": "Gailli"
+            }
+        ],
+        "orari": {
+            "mattina": ["Stroia", "Matematica"],
+            "pomeriggio": ["Italiano", "Geografia"]
+        }
+    }
+]
