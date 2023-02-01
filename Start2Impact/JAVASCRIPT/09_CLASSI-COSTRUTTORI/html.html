@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function Persona(nome, cognome, eta, genere, interessi) {
+            this.nome = nome;
+            this.cognome = cognome;
+            this.eta = eta;
+            this.interessi = interessi;
+            this.bio = function(){
+                console.log(`${this.nome} ${this.cognome} è 
+                ${(this.genere == `Maschio`) ? `un ragazzo` : `una ragazza`} di ${this.eta} anni
+                a cui piace ${this.interessi.join(`, `)}`);
+            };
+            this.saluta = function(){
+                console.log(`Ciao sono ${this.nome}`);
+            };
+        }
+
+        const persona1 = new Persona(`Luca`, `Rossi`, 23, `Maschio`, [`calcio`, `Basket`]);
+        const persona2 = new Persona(`Anna`, `Verdi`, 19, `Ragazza`, [`Letteratura`, `Masterchef`, `Muscia`]);
+
+        console.log(persona1);
+        console.log(persona2);
+
+        persona1.saluta();
+        persona2.saluta();
+
+        persona1.bio();
+        persona2.bio();
+    
+    </script>
+    
+</body>
+</html>
