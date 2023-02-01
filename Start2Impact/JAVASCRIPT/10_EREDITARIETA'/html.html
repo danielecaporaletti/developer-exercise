@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!--
+        PRIMO MODO CON LE FUNCTION
+        SECONDO MODO CON LE CLASSI (DAL 2015)
+    <script>
+        function Persona(nome, cognome, eta, genere, interessi) {
+            this.nome = nome;
+            this.cognome = cognome;
+            this.eta = eta;
+            this.genere = genere;
+            this.interessi = interessi;
+            this.saluta = function(){
+                console.log(`Ciao sono ${this.nome}`);
+            };
+        };
+
+        // IL call E' IMPORTANTE, COME FOSSE UN SUPER IN JAVA
+        // INSEGNANTE FA RIFERIMENTO A PERSONA 
+        function Insegnante(nome, cognome, eta, genere, interessi, materia) {
+            Persona.call(this, nome, cognome, eta, genere, insteressi);
+
+            this.materia = materia;
+            this.saluta = function(){
+                console.log(`Buongiorno sono ${this.nome} ${this.cognome}`);
+            };
+        };
+
+        const insegnante = new Insegnante(`Anna`, `Blu`, 32, `Femmina`, [`Netflix`], `Stroia`);
+        console.log(insegnante);
+        insegnante.saluta();
+    </script>
+-->
+
+    <script>
+
+        class Persona {
+            constructor(nome, cognome, eta, genere, interessi) {
+                this.nome = nome;
+                this.cognome = cognome;
+                this.eta = eta;
+                this.genere = genere;
+                this.interessi = interessi;
+            }
+
+            saluta() {
+                console.log(`Ciao sono ${this.nome}`);
+            };
+        }
+
+        class Insegnante extends Persona {
+            constructor(nome, cognome, eta, genere, interessi, materia){
+                super(nome, cognome, eta, genere, interessi);
+                this.materia = materia;
+            }
+            
+            // IMPORTANTE PER I GETTER E SETTER METTERE L'UNDERSCORE 
+            // E SOPRATTUTTO METTERLI INSIEME, SE NE MANCA UNO DA PROBLEMI
+            get materia() {
+                return this._materia;
+            }
+
+            set materia(nuovaMateria){
+                this._materia = nuovaMateria;
+            }
+
+            riprendiAlunno(nomeAlunno) {
+                console.log(`${nomeAlunno} non si mangia in classe!`);
+            }
+        }
+
+        const insegnante = new Insegnante(`Anna`, `Blu`, 32, `Femmina`, [`Netflix`], `Stroia`);
+        insegnante.saluta();
+        insegnante.riprendiAlunno(`Edoardo`);
+
+        // QUESTE RIGHE DI CODICE FUNZIONANO MA NON SI USANO
+        // SI PREFERISCE USARE I GETTER E SETTER
+        console.log(insegnante.materia);
+        insegnante.materia = `Matematica`;
+        console.log(insegnante.materia);
+
+
+
+
+    </script>
+    
+</body>
+</html>
