@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!--
+    <button>Reinizia</button>
+
+    <script>
+        // FA LA FUNZIONE DOPO UN TIMEOUT DI 5 SECONDI
+        let prova = setTimeout(saluta, 5000);
+        const btn = document.querySelector(`button`);
+
+        function saluta() {
+            alert(`Ciao ho eseguito il timeout`);
+        }
+        
+        btn.addEventListener(`click`, ()=> {
+            clearTimeout(prova);
+        })
+    </script>     
+-->
+    <button>Ferma</button>
+    <p id="demo"></p>
+    <script>
+        function displayTime() {
+            let date = new Date();
+            console.log(date);
+            let time = date.toLocaleTimeString();
+            document.getElementById(`demo`).textContent = time;
+        }
+
+        // IMPOSTA L'ORA DOPO OGNI 1 SECONDO
+        const createClock = setInterval(displayTime, 1000);
+
+        const btn = document.querySelector(`button`);
+        btn.addEventListener(`click`, ()=> {
+            clearInterval(createClock);
+        })
+    </script>
+    
+</body>
+</html>
