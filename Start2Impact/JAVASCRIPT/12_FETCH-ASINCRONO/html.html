@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!--
+        CALLBACK ASINCRONA 
+        METOO VECCHIO
+    <script>
+
+        // CREO FUNZIONE CARICA ASSET IMMAGINE)
+        function lodAsset(url, type, callback) {
+            let xhr = new XMLHttpRequest();
+            xhr.open(`GET`, url);
+            xhr.responseType = type;
+
+            xhr.onload = function () {
+                callback(xhr.response);
+            };
+
+            xhr.send();
+         }
+
+         function displayImage(blob){
+            let objectURL = URL.createObjectURL(blob);
+
+            let image = document.createElement(`img`);
+            image.src = objectURL;
+            document.body.appendChild(image);
+         }
+
+         // LANCIO LA MIA FUNZIONE CREATA PRIMA
+         lodAsset(`https://ak.picdn.net/shutterstock/videos/11773709/thumb/10.jpg`, `blob`, displayImage);
+
+    </script>
+-->
+
+<!--
+    CALLBACK ASINCRONA
+    METODO MODERNO 
+    CON FETCH CHE LASCIA UNA PROMIS (PENDENTE)
+-->
+    <script>
+        // TUTTA LA FUNZIONE loadAsset E' IL fetch E IL then E' IL callback
+        // QUINDI DOPO AVER FATTO IL FATCH (.THEN) PRENDI LA RISPOSTA E LO RITORNI COME FILE JSON
+        // POI (.THEN) UNA VOLTA CHE HAI RITORNATO IL JSON, LO PRENDI E LO BUTTI IN CLASSE
+        // E POI LO MANDI A SCHERMO
+        // IN PIU' ABBIAMO FATTO .CTCH PER ANDARE A PRENDERE L'ERRORE PER GESTIRLO
+        fetch(`classe.json`).then(function(response) {
+            return response.json();
+        }).then(function(json) {
+            classe = json;
+            console.log(`Dati: `, classe)
+        }).catch(function(err) {
+            console.log(`Fetch problem: ` + err.message);
+        });
+    </script>
+    
+</body>
+</html>
