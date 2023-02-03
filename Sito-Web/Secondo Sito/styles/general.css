@@ -8,10 +8,27 @@
 
 body {
     margin-bottom: 1000px;
+    
     background: rgb(224,224,224);
     background: linear-gradient(90deg, rgba(224,224,224,1) 0%, rgba(246,246,246,1) 50%, rgba(224,224,224,1) 100%);
 }
 
+@media (min-width: 821px) {
+
+    body {
+        max-width: 80vw;
+        margin: auto;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    body {
+        background: rgb(188,188,188);
+        background: linear-gradient(90deg, rgba(188,188,188,1) 0%, rgba(233,233,233,1) 50%, rgba(188,188,188,1) 100%);
+    }
+    
+}
 /*  font-family: 'Days One', sans-serif; */
 
 /*

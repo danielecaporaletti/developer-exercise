@@ -3,15 +3,14 @@ header {
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
-    height: 50px;
+    height: 55px;
 }
 
 .DC {
     display: inline-block;
-    font-size: 30px;
+    font-size: 3vw;
     font-family: 'Days One', sans-serif;
     color: #424242;
-    margin-left: 25px;
     letter-spacing: -.15ch;
 }
 
@@ -55,4 +54,62 @@ header {
 .icon-mode {
     width: 20px;
     height: 20px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    font-size: 2vw;
+    margin-left: 18px;
+    margin-right: 18px;
+    font-weight: 500;
+
+    flex-grow:  1;
+    text-align: center;
+}
+
+li img {
+    width: 2.5em;
+    height: 2.5em;
+    max-width: 60px;
+    max-height: 60px;
+}
+
+@media (max-width: 820px) {
+    .menu-disteso {
+        display: none;
+    }
+
+    .DC {
+        margin-left: 50px;
+    }
+
+    .menu-box {
+        margin-right: 80px;
+    }
+}
+
+@media (min-width: 821px) {
+
+    header {
+        height: 7vw;
+    }
+
+    .menu-box {
+        display: none;
+    }
+
+}
+
+@media (max-width: 1290px) {
+    li {
+        margin-left: 1.4vw;
+        margin-right: 1.4vw;
+    }
 }
