@@ -6,10 +6,16 @@
 }
 
 h1 {
+    display: inline;
     margin-top: 40px;
     font-weight: 700;
-    width: 70vw;
-    font-size: 6vw;
+    width: 80vw;
+    font-size: 8vw;
+}
+
+h6 {
+    display: inline;
+    letter-spacing: 28vw;
 }
 
 h1 strong {
@@ -22,7 +28,7 @@ h1 strong {
 .myPhoto {
     margin-top: 40px;
     margin-bottom: 40px;
-    width: 60vw;
+    width: 75vw;
     border-radius: 20px;
 }
 
@@ -35,7 +41,7 @@ hr {
 h2 {
     color: #424242;
     margin-left: 8vw;
-    font-size: 6vw;
+    font-size: 7.5vw;
     font-weight: 500;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -44,7 +50,7 @@ h2 {
 article {
     width: 85vw;
     margin: auto;
-    font-size: 2.5vw;
+    font-size: 4vw;
     text-align: justify;
     padding-bottom: 10px;
 }
@@ -56,14 +62,14 @@ article strong {
 
 h3 {
     color: #626262;
-    font-size: 3vw;
+    font-size: 5vw;
     margin-left: 8vw;
     margin-bottom: 8px;
 }
 
 h4 {
     color: #626262;
-    font-size: 2vw;
+    font-size: 3.3vw;
     margin-bottom: 5px;
 }
 
@@ -76,7 +82,7 @@ h4 {
     display: flex;
     justify-content: space-between;
     margin-left: 8vw;
-    width: 32vw;
+    width: 46vw;
 }
 
 .work-dx {
@@ -92,11 +98,62 @@ h4 {
     width: 80vw;
     margin: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .logo {
     margin: 10px 10px 10px 10px;
-    width: 8vw;
-    height: 8vw;
+    width: 9vw;
+    height: 9vw;
+}
+
+.projects {
+    margin-top: 35px;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #626262;
+    font-size: 3vw;
+    margin-left: 16px;
+}
+
+h5:first-child {
+    margin-left: 0px;
+}
+
+.sott {
+    margin: auto;
+    width: 4em;
+    margin-top: 6px;
+}
+
+.griglia {
+    display: grid;
+    place-items: center;
+    margin: auto;
+    row-gap: 35px;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 95%;
+    margin-top: 40px;
+
+}
+
+.progetto {
+    background-color: white;
+    width: 9.5em;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
 }
