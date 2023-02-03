@@ -1,0 +1,57 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    height: 40px;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 25px;
+    font-family: 'Days One', sans-serif;
+    color: #424242;
+    margin-left: 40px;
+}
+
+.menu-box {
+    display: flex;    
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.menu {
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+}
+
+.button-mode {
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px;
+    border-style: solid;
+    transition: 0.2s;
+    background-image: url(../images/lightMode.svg);
+}
+
+.button-mode:hover {
+    background-color: rgb(72, 72, 72);
+    background-image: url(../images/darkMode.svg);
+}
+
+.button-mode:active {
+    background-color: rgb(20, 20, 20);
+}
+
+.icon-mode {
+    width: 20px;
+    height: 20px;
+}

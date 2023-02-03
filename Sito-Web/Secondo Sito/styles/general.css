@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+body {
+    margin-bottom: 1000px;
+    background: rgb(224,224,224);
+    background: linear-gradient(90deg, rgba(224,224,224,1) 0%, rgba(246,246,246,1) 50%, rgba(224,224,224,1) 100%);
+}
+
+/*  font-family: 'Days One', sans-serif; */
+
+/*
+PER LO SCHERMO DEL COMPUTER VA BENE QUESTO:
+    background: rgb(188,188,188);
+    background: linear-gradient(90deg, rgba(188,188,188,1) 0%, rgba(233,233,233,1) 50%, rgba(188,188,188,1) 100%);
+INVECE PER IL TELEFONO LO MODIFICO NELLO STANDARD
+*/

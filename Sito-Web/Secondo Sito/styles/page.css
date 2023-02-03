@@ -1,0 +1,102 @@
+.firstPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 100%;
+}
+
+h1 {
+    margin-top: 40px;
+    font-weight: 700;
+    width: 70vw;
+    font-size: 6vw;
+}
+
+h1 strong {
+    color: #2b8aaa;
+    font-weight: 300;
+    font-family: 'Days One', sans-serif;
+    word-spacing: -.35ch;
+}
+
+.myPhoto {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 60vw;
+    border-radius: 20px;
+}
+
+hr {
+    margin: auto;
+    width: 85vw;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #424242;
+    margin-left: 8vw;
+    font-size: 6vw;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+article {
+    width: 85vw;
+    margin: auto;
+    font-size: 2.5vw;
+    text-align: justify;
+    padding-bottom: 10px;
+}
+
+article strong {
+    font-weight: 700;
+    color: #424242;
+}
+
+h3 {
+    color: #626262;
+    font-size: 3vw;
+    margin-left: 8vw;
+    margin-bottom: 8px;
+}
+
+h4 {
+    color: #626262;
+    font-size: 2vw;
+    margin-bottom: 5px;
+}
+
+.grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.work-sx {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 8vw;
+    width: 32vw;
+}
+
+.work-dx {
+    margin-right: 8vw;
+}
+
+.tec {
+    text-align: center;
+    margin:0;
+}
+
+.logos {
+    width: 80vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.logo {
+    margin: 10px 10px 10px 10px;
+    width: 8vw;
+    height: 8vw;
+}
