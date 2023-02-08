@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form class="ml-3">
+        <div class="mb-3">
+            <label class="form-label " for="inputEmail">Email</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="inputPassword">Password</label>
+            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+        </div>
+        <div class="mb-3">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkRemember">
+                <label class="form-check-label" for="checkRemember">Remember me</label>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign in</button>
+    </form>
+
+    <hr>
+
+    <form>
+        <div class="row mb-3">
+            <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-sm-10 offset-sm-2">
+                <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="checkRemember">
+                        <label class="form-check-label" for="checkRemember">Remember me</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-10 offset-sm-2">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+        </div>
+    </form>
+
+    <hr>
+
+    <form>
+        <div class="row align-items-center g-3">
+            <div class="col-auto">
+                <label class="visually-hidden" for="inputEmail">Email</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+            </div>
+            <div class="col-auto">
+                <label class="visually-hidden" for="inputPassword">Password</label>
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+            </div>
+            <div class="col-auto">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="checkRemember">
+                    <label class="form-check-label" for="checkRemember">Remember me</label>
+                </div>
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+        </div>
+    </form>
+
+    <hr>
+
+    <form>
+        <div class="row align-items-center g-3">
+            <div class="col-md-auto col-12">
+                <label class="form-label d-md-none" for="inputEmail">Email</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+            </div>
+            <div class="col-md-auto col-12">
+                <label class="form-label d-md-none" for="inputPassword">Password</label>
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+            </div>
+            <div class="col-md-auto col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="checkRemember">
+                    <label class="form-check-label" for="checkRemember">Remember me</label>
+                </div>
+            </div>
+            <div class="col-md-auto col-12">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+        </div>
+    </form>
+
+    <hr>
+
+    <form>
+        <div class="row mb-3">
+            <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+                <input type="email" readonly class="form-control-plaintext" id="inputEmail" value="peterparker@example.com">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-sm-10 offset-sm-2">
+                <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="checkRemember">
+                        <label class="form-check-label" for="checkRemember">Remember me</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-10 offset-sm-2">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+        </div>
+    </form>
+
+    <hr>
+
+    <div class="row g-3">
+        <div class="col-6">
+            <input type="text" class="form-control" placeholder="City">
+        </div>
+        <div class="col-4">
+            <select class="form-select">
+                <option>State</option>
+            </select>
+        </div>
+        <div class="col-2">
+            <input type="text" class="form-control" placeholder="Zip">
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input" name="hobbies" id="checkMusic">
+                <label class="form-check-label" for="checkMusic">Music</label>
+            </div>
+            <div class="form-check form-check-inline ms-3">
+                <input type="checkbox" class="form-check-input" name="hobbies" id="checkTravel" checked>
+                <label class="form-check-label" for="checkTravel">Travel</label>
+            </div>
+            <div class="form-check form-check-inline ms-3">
+                <input type="checkbox" class="form-check-input" name="hobbies" id="checkReading" checked>
+                <label class="form-check-label" for="checkReading">Reading</label>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" name="gender" id="radioMale" checked>
+                <label class="form-check-label" for="radioMale">Male</label>
+            </div>
+            <div class="form-check form-check-inline ms-3">
+                <input type="radio" class="form-check-input" name="gender" id="radioFemale">
+                <label class="form-check-label" for="radioFemale">Female</label>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <label class="form-label" for="inputPassword">Password</label>
+    <input type="password" class="form-control" id="inputPassword">
+    <div class="form-text">
+        Must be 8-20 characters long, contain letters, numbers and special characters, but must not contain spaces.
+    </div>
+
+    <hr>
+
+    <div class="row align-items-center g-3">
+        <div class="col-auto">
+            <label class="col-form-label" for="inputPassword">Password</label>
+        </div>
+        <div class="col-auto">
+            <input type="password" class="form-control" id="inputPassword">
+        </div>
+        <div class="col-auto">
+            <span class="form-text">Must be 8-20 characters long.</span>
+        </div>
+    </div>
+
+    <hr>
+
+    <input type="text" class="form-control mb-3" placeholder="Disabled input" disabled>
+    <textarea class="form-control mb-3" placeholder="Disabled textarea" disabled></textarea>
+    <select class="form-select" disabled>
+        <option>Disabled select</option>
+    </select>
+
+    <hr>
+
+    <form>
+        <fieldset disabled>
+            <div class="row mb-3">
+                <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-sm-10 offset-sm-2">
+                    <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="checkRemember">
+                            <label class="form-check-label" for="checkRemember">Remember me</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-10 offset-sm-2">
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+
+    <hr>
+
+    <input type="text" class="form-control mb-2" value="This input value cannot be changed." readonly>
+    <textarea rows="3" class="form-control" readonly>This textarea value cannot be changed.</textarea>
+
+    <hr>
+
+    <div class="row mb-3">
+        <label class="col-sm-2 col-form-label col-form-label-lg">Email</label>
+        <div class="col-sm-10">
+            <input type="email" class="form-control form-control-lg" placeholder="Large input">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+            <input type="email" class="form-control" placeholder="Default input">
+        </div>
+    </div>
+    <div class="row">
+        <label class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+            <input type="email" class="form-control form-control-sm" placeholder="Small input">
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row mb-3">
+        <label class="col-sm-2 col-form-label col-form-label-lg">State</label>
+        <div class="col-sm-10">
+            <select class="form-select form-select-lg">
+                <option>Large select</option>
+            </select>
+        </div>
+    </div>    
+    <div class="row mb-3">
+        <label class="col-sm-2 col-form-label">State</label>
+        <div class="col-sm-10">
+            <select class="form-select">
+                <option>Default select</option>
+            </select>
+        </div>
+    </div>    
+    <div class="row">
+        <label class="col-sm-2 col-form-label col-form-label-sm">State</label>
+        <div class="col-sm-10">
+            <select class="form-select form-select-sm">
+                <option>Small select</option>
+            </select>
+        </div>
+    </div>
+
+    <hr>
+
+    <form class="needs-validation" novalidate>
+        <div class="mb-3">
+            <label class="form-label" for="inputEmail">Email</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+            <div class="invalid-feedback">Please enter a valid email address.</div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="inputPassword">Password</label>
+            <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
+            <div class="invalid-feedback">Please enter your password to continue.</div>
+        </div>
+        <div class="mb-3">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkRemember">
+                <label class="form-check-label" for="checkRemember">Remember me</label>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign in</button>
+    </form>
+
+    <hr>
+
+    <script>
+        // Self-executing function
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+    
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+
+    <hr>
+
+    <form>
+        <div class="mb-3">
+            <label class="form-label" for="inputEmail">Email</label>
+            <input type="email" class="form-control is-valid" id="inputEmail" placeholder="Email" value="peterparker@example.com" required>
+            <div class="valid-feedback">Good! Your email address looks valid.</div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="inputPassword">Password</label>
+            <input type="password" class="form-control is-invalid" id="inputPassword" placeholder="Password" required>
+            <div class="invalid-feedback">Opps! You have entered an invalid password.</div>
+        </div>
+        <div class="mb-3">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkRemember">
+                <label class="form-check-label" for="checkRemember">Remember me</label>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign in</button>
+    </form>
+
+    <hr>
+
+    <form>
+        <div class="mb-3 position-relative">
+            <label class="form-label" for="inputEmail">Email</label>
+            <input type="email" class="form-control is-valid" id="inputEmail" placeholder="Email" value="peterparker@example.com" required>
+            <div class="valid-tooltip">Good! Your email address looks valid.</div>
+        </div>
+        <div class="mb-3 position-relative">
+            <label class="form-label" for="inputPassword">Password</label>
+            <input type="password" class="form-control is-invalid" id="inputPassword" placeholder="Password" required>
+            <div class="invalid-tooltip">Opps! You have entered an invalid password.</div>
+        </div>
+        <div class="mb-3">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkRemember">
+                <label class="form-check-label" for="checkRemember">Remember me</label>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign in</button>
+    </form>
+
+    <hr>
+
+    <form>
+        <div class="row mb-3">
+            <label class="col-sm-3 col-form-label" for="firstName">First Name:</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label class="col-sm-3 col-form-label" for="lastName">Last Name:</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label class="col-sm-3 col-form-label" for="emailAddress">Email Address:</label>
+            <div class="col-sm-9">
+                <input type="email" class="form-control" id="emailAddress" placeholder="Email Address" required>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label class="col-sm-3 col-form-label" for="phoneNumber">Mobile Number:</label>
+            <div class="col-sm-9">
+                <input type="number" class="form-control" id="phoneNumber" placeholder="Phone Number" required>
+            </div>
+        </div>        
+        <div class="row mb-3">
+            <label class="col-sm-3 col-form-label">Date of Birth:</label>
+            <div class="col-sm-3">
+                <select class="form-select" required>
+                    <option>Date</option>
+                </select>
+            </div>
+            <div class="col-sm-3">
+                <select class="form-select" required>
+                    <option>Month</option>
+                </select>
+            </div>
+            <div class="col-sm-3">
+                <select class="form-select">
+                    <option>Year</option>
+                </select>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label class="col-sm-3 col-form-label" for="postalAddress">Postal Address:</label>
+            <div class="col-sm-9">
+                <textarea rows="3" class="form-control" id="postalAddress" placeholder="Postal Address" required></textarea>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label class="col-sm-3 col-form-label" for="ZipCode">Zip Code:</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" id="ZipCode" placeholder="Zip Code" required>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label class="col-sm-3 col-form-label" for="uploadImage">Upload Image:</label>
+            <div class="col-sm-9">
+                <input type="file" class="form-control" id="uploadImage">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label class="col-sm-3 col-form-label">Gender:</label>
+            <div class="col-sm-9 mt-2">
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" name="gender" id="radioMale">
+                    <label class="form-check-label" for="radioMale">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" name="gender" id="radioFemale">
+                    <label class="form-check-label" for="radioFemale">Female</label>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-sm-9 offset-sm-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="checkAgree" value="agree">
+                    <label class="form-check-label" for="checkAgree">I agree to the <a href="#">Terms and Conditions</a></label>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-sm-9 offset-sm-3">
+                <input type="submit" class="btn btn-primary" value="Submit">
+                <input type="reset" class="btn btn-secondary ms-2" value="Reset">
+            </div>
+        </div>
+    </form>
+
+    <hr>
+
+    <h1>CUSTOM FORUM</h1>
+
+    <hr>
+
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" name="customCheck" id="customCheck1">
+        <label class="form-check-label" for="customCheck1">Custom checkbox</label>
+    </div>
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" name="customCheck" id="customCheck2" checked>
+        <label class="form-check-label" for="customCheck2">Another custom checkbox</label>
+    </div>
+
+    <hr>
+
+    <div class="form-check">
+        <input type="radio" class="form-check-input" name="customRadio" id="customRadio1">
+        <label class="form-check-label" for="customRadio1">Custom radio</label>
+    </div>
+    <div class="form-check">
+        <input type="radio" class="form-check-input" name="customRadio" id="customRadio2" checked>
+        <label class="form-check-label" for="customRadio2">Another custom radio</label>
+    </div>
+
+    <hr>
+
+    <div class="form-check form-check-inline">
+        <input type="checkbox" class="form-check-input" name="customCheck" id="customCheck1">
+        <label class="form-check-label" for="customCheck1">Custom checkbox</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input type="checkbox" class="form-check-input" name="customCheck" id="customCheck2" checked>
+        <label class="form-check-label" for="customCheck2">Another custom checkbox</label>
+    </div>
+
+    <hr>
+
+    <div class="form-check form-check-inline">
+        <input type="radio" class="form-check-input" name="customRadio" id="customRadio1">
+        <label class="form-check-label" for="customRadio1">Custom radio</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input type="radio" class="form-check-input" name="customRadio" id="customRadio2" checked>
+        <label class="form-check-label" for="customRadio2">Another custom radio</label>
+    </div>
+
+    <hr>
+
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="customCheck" disabled>
+        <label class="form-check-label" for="customCheck">Disabled custom checkbox</label>
+    </div>
+    <div class="form-check">
+        <input type="radio" class="form-check-input" id="customRadio" disabled>
+        <label class="form-check-label" for="customRadio">Disabled custom radio</label>
+    </div>
+
+    <hr>
+
+    <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="switchDefault">
+        <label class="form-check-label" for="switchDefault">Default switch checkbox</label>
+    </div>
+    <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="switchChecked" checked>
+        <label class="form-check-label" for="switchChecked">Checked switch checkbox</label>
+    </div>
+    <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="switchDisabled" disabled>
+        <label class="form-check-label" for="switchDisabled">Disabled switch checkbox</label>
+    </div>
+
+
+    <hr>
+
+    <select class="form-select">
+        <option selected>Custom select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+    </select>
+
+    <hr>
+
+    <select class="form-select" disabled>
+        <option selected>Custom select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+    </select>
+
+    <hr>
+
+    <select class="form-select form-select-lg">
+        <option selected>Large custom select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+    </select>
+    <select class="form-select mt-3">
+        <option selected>Default custom select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+    </select>
+    <select class="form-select form-select-sm mt-3">
+        <option selected>Small custom select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+    </select>
+
+    <hr>
+
+    <select class="form-select" size="3" multiple>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+        <option value="4">Four</option>
+    </select>
+
+    <hr>
+
+    <label for="customRange">Custom range</label>
+    <input type="range" class="form-range" id="customRange">   
+
+    <hr>
+
+    <label for="customRange">Disabled range</label>
+    <input type="range" class="form-range" id="customRange" disabled>
+
+    <hr>
+
+    <label for="customRange">Custom range</label>
+    <input type="range" class="form-range" min="0" max="10" step="0.5" id="customRange">
+
+    
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
