@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SubmitEvent</title>
+</head>
+<body>
+    <h1>Submit Event - JavaScript</h1>
+
+    <form id="myForm" class="form">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+        <button type="submit">Login</button>
+    </form>
+
+    <script>
+        const myForm = document.getElementById("myForm");
+
+        myForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            //console.log("Form has been submitted");
+            const request = new XMLHttpRequest();
+            request.open("post", "login.php");
+            request.onload = function(){
+                console.log(request.responseText);
+            }
+            request.send(new FormData(myForm));
+        });
+
+    </script>
+    
+</body>
+</html>
