@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Golos Text', sans-serif;
+            font-weight: 700px;
+        }
+
+        .counter {
+            display: flex;
+            justify-content: center;
+            font-size: 10rem;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 2fr;
+            justify-content: center;
+            margin: 20px;
+        }
+        @media screen and (max-width: 700px) {
+            .grid-container {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+        }
+
+        button {
+            height: 4rem;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin: 5px;
+            font-size: 2rem;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        button:hover {
+            background-color: rgb(202, 202, 202);
+        }
+
+        button:active {
+            background-color: rgb(148, 148, 148);
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="counter">0</h1>
+
+    <div class="grid-container">
+        <div></div>
+        <button class="down">-</button>
+        <button class="up">+</button>
+        <div></div>
+    </div>
+    
+    <script>
+        let counter = document.querySelector(".counter");
+        let down = document.querySelector('.down');
+        let up = document.querySelector('.up');
+
+        down.addEventListener('click', () => {
+            counter.innerHTML = parseInt(counter.innerHTML) - 1;
+        });
+
+        up.addEventListener('click', () => {
+            counter.innerHTML = parseInt(counter.innerHTML) + 1;
+        })
+
+    </script>
+</body>
+</html>
