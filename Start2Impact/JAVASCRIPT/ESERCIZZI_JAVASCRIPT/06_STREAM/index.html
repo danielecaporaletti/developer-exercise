@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+       const companies = [
+        { name: 'Microsoft', category: 'Tecnologia', start: 1975, end: 2021 },
+        { name: 'Apple', category: 'Tecnologia', start: 1976, end: 2021 },
+        { name: 'Google', category: 'Tecnologia', start: 1998, end: 2021 },
+        { name: 'Facebook', category: 'Tecnologia', start: 2004, end: 2021 },
+        { name: 'Amazon', category: 'E-commerce', start: 1994, end: 2021 },
+        { name: 'Tesla', category: 'Automobili', start: 2003, end: 2021 },
+        { name: 'Walt Disney', category: 'Intrattenimento', start: 1923, end: 2021 },
+        { name: 'Coca-Cola', category: 'Bibite', start: 1892, end: 2021 },
+        { name: 'Nike', category: 'Abbigliamento', start: 1964, end: 2021 },
+        { name: 'McDonald\'s', category: 'Fast food', start: 1940, end: 2021 }
+        ];
+
+        const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
+
+        // for(let i = 0; i < companies.length; i++){
+        //     console.log(companies[i]);
+        // }
+
+        //*********************FOREACH***********************  
+
+        // companies.forEach(function(company) {
+        //     console.log(company.name);
+        // });
+
+        //****************FILTER*************************
+
+        // let canDrink = [];
+        // for(let i = 0; i < ages.length; i++){
+        //     if(ages[i] > 18){
+        //         canDrink.push(ages[i]);
+        //     }
+        // }
+
+        // const canDrink = ages.filter(function(age) {
+        //     if(age > 18) {
+        //         return true;
+        //     }
+        // });
+
+        // const canDrink = age.filter((age) => age > 18);
+        // console.log(canDrink);
+
+        // const TecnologiaCompanies = companies.filter(function(company) {
+        //     if(company.category === 'Tecnologia') {
+        //         return true;
+        //     }
+        // });
+
+        // const TecnologiaCompanies = companies.filter((company) => company.category === 'Tecnologia');
+        // console.log(TecnologiaCompanies);
+
+        //***********MAP**************************
+
+        // const companyNames = companies.map(function(company) {
+        //     return company.name;
+        // });
+
+        // const companyNames = companies.map(function(company) {
+        //     return `${company.name} [${company.start} - ${company.end}]`;
+        // });
+
+        // const companyNames = companies.map((company) => `${company.name} [${company.start} - ${company.end}]`);
+        // console.log(companyNames);
+
+        //***********SORT**************
+
+        // const sortedCompanies = company.sort(function(c1, c2) {
+        //     if(c1.start > c2.start) {
+        //         return 1;
+        //     } else {
+        //         return -1;
+        //     }
+        // });
+
+        // const sortedCompanies = companies.sort((a, b) => (a.start > b.start ? 1 : -1));
+        // console.log(sortedCompanies);
+
+        //************REDUCE********************
+
+        // let ageSum = 0;
+
+        // for(let i = 0; i < ages.length; i++) {
+        //     ageSum += ages[i];
+        // }
+
+        // const ageSum = ages.reduce(function(total, age) {
+        //     return total + age;
+        // }, 0);
+        // console.log(ageSum);
+
+        //**********COMBINAZIONE************
+
+        const combined = ages  
+            .map(age => age * 2)
+            .filter(age => age >= 40)
+            .sort((a,b) => a - b)
+            .reduce((a, b) => a + b, 0);
+
+        console.log(combined);
+
+    </script>
+</body>
+</html>
