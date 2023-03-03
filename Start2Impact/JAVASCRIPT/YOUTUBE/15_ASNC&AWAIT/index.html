@@ -32,6 +32,29 @@
         hello().then(console.log);
         
     </script>
+
+    <script>
+        async function myFetch() {
+            try {
+                let response = await fetch('coffe.jpg');
+                let myBlob = await response.blob(); 
+
+                let objectURL = URL.createObjectURL(myBlob);
+                let image = document.createElement('img');
+                image.src = objectURL;
+                docuemnt.body.appendChild(image);
+            } catch (e) {
+                console.log('There has been a problm with your fetch operation: ' + e.message);
+            }
+
+        }
+
+        /*
+        myFetch().catch(e => {
+            console.log('There has been a problm with your fetch operation: ' + e.message);
+        });
+        */
+    </script>
     
 </body>
 </html>
