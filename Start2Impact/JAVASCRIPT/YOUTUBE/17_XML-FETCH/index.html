@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let classeXML; //metodo XML
+        let classeFetch; //metodo fetch
+
+        let url = './classe.json';
+        let request = new XMLHttpRequest();
+        request.open('GET', url);
+        request.responseType = 'json';
+
+        request.onload = function() {
+            classeXML = request.response;
+            console.log('XMLHttpRequest: ', classeXML);
+        }
+
+        request.send();
+
+        fetch(url)
+            .then(response => {
+                response.json()
+            }).then(json => {
+                classeFetch = request.response;
+                console.log('fetch: ', classeFetch);
+            });
+    </script>
+</body>
+</html>

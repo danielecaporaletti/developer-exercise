@@ -20,13 +20,37 @@
         let z = docuemnt.querySelector('#bottone');
         let k = document.querySelector('.prova');
 
-        let w = document.querySelectorAll('.prova');
+        let w = document.querySelectorAll('.prova'); //ritorna un array di elementi
+        console.log("w: ", w);
 
-        let j = document.getElementByClassName('prova');
+        let j = document.getElementByClassName('prova'); //ritorna un array di elementi
+        console.log("j: ", j);
 
         //creare nuovi nodi
 
         const div = document.querySelector('div');
+        const paragrafo = document.createElement('p');
+        paragrafo.textContent = 'Elemento creato dinamicamente.';
+        div.appendChild(paragrafo);
+
+        const extraTesto = document.createTextNode('Altra parte di testo come node');
+        paragrafo.appendChild(extraTesto);
+
+        //SPOSTARE E RIMUOVERE I NODI
+        // document.body.appendChild(paragrafo);
+        // paragrafo.removeChild(extraTesto);
+        // extraTesto.remove();
+
+        //MANIPOLARE GLI STILI
+        // paragrafo.style.color = 'red';
+        // paragrafo.style.backgroundColor = 'black';
+        // paragrafo.style.padding = '10px';
+        // paragrafo.style.textAlign = 'center';
+
+        // AGGIUNGERE GLI ATTRIBUTI
+        paragrafo.setAttribute('class', 'modificaStili'); //aggiunge una classe CSS per manipolare più stili contemporaneamente
+        paragrafo.setAttribute('data-value', 'ciao');
+        console.log(paragrafo.getAttribute('data-value'));
 
     </script>
     
