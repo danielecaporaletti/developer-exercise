@@ -1,0 +1,61 @@
+.App {
+  min-height: 100vh;
+  background: #3a7bd5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3a6073, #3a7bd5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3a6073, #3a7bd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.search-form {
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar {
+  width: 40%;
+  border: none;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  outline: none;
+}
+
+.search-button {
+  font-weight: bold;
+  background: brown;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.search-button:hover {
+  background: rgb(164, 23, 23);
+}
+
+.search-button:active {
+  background: rgb(148, 16, 16);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-gap: 3rem;
+  padding: 3rem;
+  margin: 0 auto;
+}
+
+.error {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: 10vh;
+}
+
+/* Per schermi di dimensioni medie (ad esempio, tablet) */
+@media screen and (max-width: 547px) {
+  .container {
+      grid-template-columns: 1fr;
+  }
+}
