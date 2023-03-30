@@ -12,6 +12,11 @@ const RoomProvider = ({ children }) => {
     loading: false,
   });
 
+  const getRoom = (slug) => {
+    const room = state.rooms.find((room) => room.slug === slug);
+    return room;
+  };
+
   useEffect(() => {
     const formatRooms = formatData(items);
     setState(prevState => ({ ...prevState, rooms: formatRooms }));
@@ -34,7 +39,7 @@ const RoomProvider = ({ children }) => {
 
   return (
     <>
-      <RoomContext.Provider value={{ ...state }}>
+      <RoomContext.Provider value={{ ...state, getRoom }}>
         {children}
       </RoomContext.Provider>
     </>
