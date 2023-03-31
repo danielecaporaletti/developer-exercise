@@ -1,0 +1,154 @@
+.headerTop {
+    height: 53px;
+    padding: 10px 15px 6px 15px;
+    border-bottom: 1px solid rgb(217, 217, 217);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttonMenuIcon {
+    width: 34px;
+    height: 32px;
+    background-color: transparent;
+    border: none;
+}
+
+.imgMenuIcon {
+    height: 16px;
+    width: 16px;
+}
+
+.imgNewYorkTimesIcon {
+    width: 225px;
+    height: 30px;
+    background-color: transparent;
+}
+
+.buttonUserIcon {
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgUserIcon {
+    height: 24px;
+    width: 24px;
+}
+
+.buttonCloseIcon {
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.imgCloseIcon {
+    height: 16px;
+    width: 16px;
+}
+
+.menu {
+    padding: 20px 20% 0px;
+    position: fixed;
+    top: 53px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    z-index: 1000;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 491px) {
+    .menu {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+@media only screen and (max-width: 371px) {
+    .menu {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+.searchTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 0px 7px 0px;
+}
+
+.inputMenu {
+    flex-grow: 1;
+    margin-right: 3%;
+    font-size: 1rem;
+    height: 35px;
+    padding: 1px 40px 0px 10px;
+    border: 1px solid rgb(226, 226, 226);
+    color: rgb(102, 102, 102);
+    vertical-align: middle;
+}
+
+.inputButtonCerca {
+    width: auto;
+    height: 100%;
+    max-height: 35px;
+    aspect-ratio: 1/1;
+    
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(152, 179, 200);
+    background-color: rgb(170, 189, 202);
+    font-size: 11px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.inputButtonCerca:hover {
+    background-color: rgb(149, 173, 187);
+    transition: 0.5s;
+}
+
+.sectionsList {
+    
+}
+
+.lists {
+    display: flex;
+}
+
+.list {
+    flex: 1;
+    list-style: none;
+    margin: 13px 0px 13px 0px;
+}
+
+.list > li {
+    padding: 5px 0px 5px 0px;
+    color: rgb(51, 51, 51);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.headerBotton {
+    height: 35px;
+    color: #171717;
+    padding: 6px 15px 6px 15px;
+    border-bottom: 1px solid rgb(217, 217, 217);
+    text-align: center;
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+    font-size: 0.6875rem;
+}

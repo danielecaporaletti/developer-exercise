@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "section": "World"
+    },
+    {
+        "id": 2,
+        "section": "U.S."
+    },
+    {
+        "id": 3,
+        "section": "Politics"
+    },
+    {
+        "id": 4,
+        "section": "N.Y."
+    },
+    {
+        "id": 5,
+        "section": "Business"
+    },
+    {
+        "id": 6,
+        "section": "Opinion"
+    },
+    {
+        "id": 7,
+        "section": "Science"
+    },
+    {
+        "id": 8,
+        "section": "Health"
+    },
+    {
+        "id": 9,
+        "section": "Sports"
+    },
+    {
+        "id": 10,
+        "section": "Arts"
+    },
+    {
+        "id": 11,
+        "section": "Books"
+    },
+    {
+        "id": 12,
+        "section": "Style"
+    },
+    {
+        "id": 13,
+        "section": "Food"
+    },
+    {
+        "id": 14,
+        "section": "Travel"
+    },
+    {
+        "id": 15,
+        "section": "Magazine"
+    },
+    {
+        "id": 16,
+        "section": "Real Estate"
+    },
+    {
+        "id": 17,
+        "section": "Cooking"
+    },
+    {
+        "id": 18,
+        "section": "The Athletic"
+    },
+    {
+        "id": 19,
+        "section": "Wirecutter"
+    },
+    {
+        "id": 20,
+        "section": "Games"
+    }
+]

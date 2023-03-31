@@ -1,0 +1,276 @@
+[
+    {
+        "id": 1,
+        "section": "World",
+        "subsection": [
+            "Africa",
+            "Australia",
+            "Americas",
+            "Asia Pacific",
+            "Canada",
+            "Europe",
+            "Middle East"
+        ]
+    },
+    {
+        "id": 2,
+        "section": "Business",
+        "subsection": [
+            "DealBook",
+            "Economy",
+            "Energy",
+            "Markets",
+            "Media",
+            "Small Business",
+            "Your Money",
+            "Automotive"
+        ]
+    },
+    {
+        "id": 3,
+        "section": "Politics",
+        "subsection": [
+            "President Biden",
+            "Supreme Court",
+            "Congress"
+        ]
+    },
+    {
+        "id": 4,
+        "section": "U.S.",
+        "subsection": [
+            "Education",
+            "California Today",
+            "Race/Related",
+            "Wildfire Tracker"
+        ]
+    },
+    {
+        "id": 5,
+        "section": "Sports",
+        "subsection": [
+            "MLB",
+            "NBA",
+            "NFL",
+            "NCAA Basketball",
+            "NCAA Football",
+            "Golf",
+            "Soccer",
+            "Tennis"
+        ]
+    },
+    {
+        "id": 6,
+        "section": "Health",
+        "subsection": [
+            "Money & Policy",
+            "Healt Guide"
+        ]
+    },
+    {
+        "id": 7,
+        "section": "N.Y.",
+        "subsection": [
+            "Eric Adams",
+            "Kathy Hochul",
+            "Big City",
+            "Metropolitan Diary",
+            "Sunday Routine"
+        ]
+    },
+    {
+        "id": 8,
+        "section": "Opinion",
+        "subsection": [
+            "Columnists",
+            "Editorials",
+            "Guest Essays",
+            "Letters",
+            "Sunday Opinion"
+        ]
+    },
+    {
+        "id": 9,
+        "section": "Tech",
+        "subsection": [
+            "Personal Tech",
+            "Cybersecurity",
+            "Social Media"
+        ]
+    },
+    {
+        "id": 10,
+        "section": "Science",
+        "subsection": [
+            "Climate & Environmental",
+            "Space & Astronomy"
+        ]
+    },
+    {
+        "id": 11,
+        "section": "Arts",
+        "subsection": [
+            "Art & Design",
+            "Dance",
+            "Movies",
+            "Music",
+            "Pop Culture",
+            "Television",
+            "Theater",
+            "What to Watch",
+            "Awards Season"
+        ]
+    },
+    {
+        "id": 12,
+        "section": "Book Review",
+        "subsection": [
+            "Best Sellers",
+            "By the Book",
+            "The Book Review",
+            "Book Revies Podcast",
+            "Globetrotting"
+        ]
+    },
+    {
+        "id": 13,
+        "section": "Style",
+        "subsection": [
+            "Fashion",
+            "Man's Styles",
+            "On the Runway",
+            "Love",
+            "Self-Care"
+        ]
+    },
+    {
+        "id": 14,
+        "section": "Food",
+        "subsection": [
+            "NKT Cooking",
+            "Restaurant Search",
+            "Wine Beer & Cocktails",
+            "What to Cook"
+        ]
+    },
+    {
+        "id": 15,
+        "section": "Travel"
+    },
+    {
+        "id": 16,
+        "section": "Magazine"
+    },
+    {
+        "id": 17,
+        "section": "T Mgazine"
+    },
+    {
+        "id": 18,
+        "section": "Real Estate",
+        "subsection": [
+            "On the Market",
+            "Mortgage Calculator",
+            "Living In",
+            "The Hurt",
+            "The High End",
+            "What You Get"
+        ]
+    },
+    {
+        "id": 19,
+        "section": "Obituaries"
+    },
+    {
+        "id": 20,
+        "section": "Video"
+    },
+    {
+        "id": 21,
+        "section": "Graphics"
+    },
+    {
+        "id": 22,
+        "section": "The Upshot"
+    },
+    {
+        "id": 23,
+        "section": "Headway"
+    },
+    {
+        "id": 24,
+        "section": "Trending"
+    },
+    {
+        "id": 25,
+        "section": "Reader Center"
+    },
+    {
+        "id": 26,
+        "section": "Parenting"
+    },
+    {
+        "id": 27,
+        "section": "The Athletic"
+    },
+    {
+        "id": 28,
+        "section": "Wirecutter"
+    },
+    {
+        "id": 29,
+        "section": "Live Events"
+    },
+    {
+        "id": 30,
+        "section": "Games"
+    },
+    {
+        "id": 31,
+        "section": "Newsletters"
+    },
+    {
+        "id": 32,
+        "section": "The Learning Network"
+    },
+    {
+        "id": 33,
+        "section": "Podcasts"
+    },
+    {
+        "id": 34,
+        "section": "Times Store"
+    },
+    {
+        "id": 35,
+        "section": "School of NYT"
+    },
+    {
+        "id": 36,
+        "section": "TimesMachine"
+    },
+    {
+        "id": 37,
+        "section": "Subscribe"
+    },
+    {
+        "id": 38,
+        "section": "Manage Account"
+    },
+    {
+        "id": 39,
+        "section": "Toda's Paper"
+    },
+    {
+        "id": 40,
+        "section": "Tools & Service"
+    },
+    {
+        "id": 41,
+        "section": "Jobs"
+    },
+    {
+        "id": 42,
+        "section": "Corrections"
+    }
+]

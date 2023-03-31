@@ -1,3 +1,4 @@
+import './App.css';
 import HomePage from './pages/HomePage';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
@@ -21,7 +22,7 @@ function App() {
 
 
   return (
-    <div>
+    <div className='App'>
       {isLoading ? <h1>Caricamento...</h1> : <HomePage data={data}/>}
     </div>
   );
