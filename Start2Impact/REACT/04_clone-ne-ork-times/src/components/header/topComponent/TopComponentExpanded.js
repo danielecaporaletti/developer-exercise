@@ -68,7 +68,7 @@ const TopComponentExpanded = () => {
     try {
       const ipAddress = await getIPAddress();
       const coordinates = await ipToLatLng(ipAddress);
-      const apiKey = '7299cdb7200f633eba627d91b1035d1e';
+      const apiKey = process.env.REACT_APP_WEATHER_DATA_API_KEY;
       const weather = await getWeatherData(coordinates.latitude, coordinates.longitude, apiKey);
       setMeteo({
         icon: weather.icon, 
@@ -82,7 +82,7 @@ const TopComponentExpanded = () => {
   };
 
   const fetchData = async (symbol) => {
-    const API_KEY = 'c843ddd43f8845c4b3fdc22a55219489'; // Inserisci la tua chiave API
+    const API_KEY = process.env.REACT_APP_TWELVE_DATA_API_KEY; // Inserisci la tua chiave API
 
     try {
       const response = await axios.get(
@@ -118,7 +118,7 @@ const TopComponentExpanded = () => {
     const more = sections.slice(22, 42)
 
     return(
-      <div className={styles.sidebar}>
+      <div className={styles.sidebar} onMouseLeave={() => setTimeout( () => setIsSidebar(false), 500)}>
         <ul className={styles.sidebarContents}>
           <li className={styles.sidebarSection}>Home Page</li>
           { first.map( (section) => {
@@ -126,6 +126,8 @@ const TopComponentExpanded = () => {
               <li key={section.id} className={styles.sidebarSection}>
                 <div>{section.section}</div>
                 <div className={styles.arrow}>&gt;</div>
+                <div className={styles.fumetto}></div>
+                <div className={styles.finestrella}><div className={styles.finestrellaTitle}>{section.section}</div>{section.subsection.map((subsection) => <div className={styles.subsection}>{subsection}</div>)}</div>
               </li>
             );
           })}
@@ -134,7 +136,13 @@ const TopComponentExpanded = () => {
             return (
               <li key={section.id} className={styles.sidebarSection}>
                 <div>{section.section}</div>
-                {section.subsection!==undefined && <div className={styles.arrow}>&gt;</div>}
+                {section.subsection!==undefined && 
+                  <>
+                  <div className={styles.arrow}>&gt;</div>
+                  <div className={styles.fumetto}></div>
+                  <div className={styles.finestrella}><div className={styles.finestrellaTitle}>{section.section}</div>{section.subsection.map((subsection) => <div className={styles.subsection}>{subsection}</div>)}</div>
+                  </>
+                }
               </li>
             )
           })}
@@ -163,14 +171,14 @@ const TopComponentExpanded = () => {
 
       {isSidebar && sidebarOpen()}
 
-      <div className={styles.headerTop}>
+      <div className={styles.headerTop} >
         <div className={styles.headerTopLeft}>
-          <buttom className={styles.buttomMenuIcon}>
-            <img src={menuIcon} alt='' onClick={() => setIsSidebar(!isSidebar)} className={styles.imgMenuIcon} />
-          </buttom>
-          <buttom onClick={() => setIsSearch(!isSearch)} className={`${styles.buttomSearchIcon} ${isSearch ? styles['buttomSearchIcon-active'] : ''}`}>
+          <button  onClick={() => setIsSidebar(!isSidebar)} className={styles.buttonMenuIcon}>
+            <img src={menuIcon} alt='' className={styles.imgMenuIcon} />
+          </button>
+          <button onClick={() => setIsSearch(!isSearch)} className={`${styles.buttonSearchIcon} ${isSearch ? styles['buttonSearchIcon-active'] : ''}`}>
             <img src={searchIcon} alt='' className={styles.imgSearchIcon} />
-          </buttom>
+          </button>
           {isSearch && barraDiRicerca()}
         </div>
         <div className={styles.headerTopRight}>

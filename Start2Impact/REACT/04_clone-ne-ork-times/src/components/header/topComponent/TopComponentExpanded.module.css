@@ -12,7 +12,7 @@
     justify-content: center;
 }
 
-.buttomMenuIcon {
+.buttonMenuIcon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,7 +26,7 @@
     padding: 8px 9px 9px;
 }
 
-.buttomMenuIcon:hover {
+.buttonMenuIcon:hover {
     background-color: rgb(241, 241, 241);
     transition: 0.5s;
 }
@@ -36,7 +36,7 @@
     width: 16px;
 }
 
-.buttomSearchIcon {
+.buttonSearchIcon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,7 +50,7 @@
     padding: 8px 9px 9px;
 }
 
-.buttomSearchIcon:hover {
+.buttonSearchIcon:hover {
     background-color: rgb(241, 241, 241);
     transition: 0.5s;
 }
@@ -211,7 +211,7 @@
 }
 
 .section {
-    font-size: 12px;
+    font-size: 11.4px;
     cursor: pointer;
     padding: 4px;
 }
@@ -247,7 +247,6 @@
     width: 200px;
     height: 100%;
     background-color: #fff;
-    z-index: 999;
     border-radius: 3px;
     border-right: 1px solid rgb(199, 199, 199);
     box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
@@ -266,11 +265,13 @@
     display: flex;
     justify-content: space-between;
     width: 90%;
-    list-style: none;
+    list-style-type: none;
     font-size: 13px;
     font-weight: 700;
     cursor: pointer;
     padding: 5px;
+
+    position: relative;
 }
 
 .sidebarSection:hover {
@@ -291,14 +292,55 @@
 }
 
 .finestrella {
+    display: none;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 200px;
-    height: 200px;
-    background-color: #fff;
-    z-index: 1000;
-    border-radius: 3px;
-    border: 1px solid rgb(142, 142, 142);
-    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
+    left: 100%;
+    top: -120%;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+.sidebarSection:hover .finestrella {
+    display: block;
+}
+
+.fumetto {
+    display: none;
+    position: absolute;
+    top: 20%;
+    left: 86%;
+    margin-top: -7px;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 25px solid white;
+    z-index: 100;
+}
+
+.sidebarSection:hover .fumetto {
+    display: block;
+}
+
+.subsection {
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.subsection:hover {
+    background-color: rgba(100, 186, 235, 0.121);
+    border-radius: 5px;
+}
+
+.finestrellaTitle {
+    font-size: 13px;
+    font-weight: 500;
+    padding: 5px;
+    color: rgb(185, 185, 185);
 }

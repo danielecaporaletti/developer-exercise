@@ -1,7 +1,5 @@
 import TopComponentCompres from './topComponent/TopComponentCompres';
 import TopComponentExpanded from './topComponent/TopComponentExpanded';
-import MiddleComponent from './MiddleComponent';
-import BottomComponent from './BottomComponent';
 import React, { useEffect, useState } from 'react'
 
 const Header = () => {
@@ -28,8 +26,6 @@ const Header = () => {
   return (
     <>
         {isExpand ? <TopComponentExpanded /> : <TopComponentCompres />}
-        <MiddleComponent />
-        <BottomComponent />
     </>
   )
 }
