@@ -1,3 +1,13 @@
+.link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.link > li {
+    margin-bottom: 7px;
+}
+
 .headerTop {
     height: 53px;
     padding: 10px 15px 6px 15px;
@@ -7,11 +17,29 @@
     align-items: center;
 }
 
+.headerTopOpen {
+    position: fixed;
+    background: white;
+    width: 95%;
+    height: 53px;
+    padding: 10px 15px 6px 15px;
+    border-bottom: 1px solid rgb(217, 217, 217);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
 .buttonMenuIcon {
     width: 34px;
     height: 32px;
     background-color: transparent;
     border: none;
+    cursor: pointer;
+}
+
+.buttonMenuIcon:hover {
+    background-color: rgb(227, 227, 227);
 }
 
 .imgMenuIcon {
@@ -19,10 +47,16 @@
     width: 16px;
 }
 
+.space {
+    width: 26px;
+    height: 1px;
+}
+
 .imgNewYorkTimesIcon {
     width: 225px;
     height: 30px;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .buttonUserIcon {
@@ -32,6 +66,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+
+.buttonUserIcon:hover {
+    background-color: rgb(227, 227, 227);
 }
 
 .imgUserIcon {
@@ -151,4 +190,8 @@
     place-items: center;
     font-weight: 700;
     font-size: 0.6875rem;
+}
+
+li {
+    cursor: pointer;
 }

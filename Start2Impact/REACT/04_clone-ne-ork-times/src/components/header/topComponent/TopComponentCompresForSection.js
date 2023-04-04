@@ -9,8 +9,8 @@ import sections from '../../../json/sections.json';
 import { Link } from 'react-router-dom';
 import noScrollStyles from './noScroll.module.css';
 
-const TopComponent = () => {
-
+const TopComponentCompresForSection = () => {
+  
   const [isMenu, setIsMenu] = useState(false);
 
   const openMenu = () => {
@@ -55,7 +55,7 @@ const TopComponent = () => {
           <img src={menuIcon} alt='' className={styles.imgMenuIcon} />
         </button>
         <Link to='/' className={styles.link}>
-        <img src={NewYorkTimes} alt='' className={styles.imgNewYorkTimesIcon} />
+          <img src={NewYorkTimes} alt='' className={styles.imgNewYorkTimesIcon} />
         </Link>
         <a href='https://myaccount.nytimes.com/auth/enter-email' className={styles.buttonUserIcon} >
           <img src={userIcon} alt='' className={styles.imgUserIcon} />
@@ -80,18 +80,6 @@ const TopComponent = () => {
     );
   }
 
-  const menuClosed = () => {
-
-    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-    const dataOggi = new Date().toLocaleDateString('en-US', options);
-
-    return (
-      <div className={styles.headerBotton}>
-        {dataOggi}
-      </div>
-    );
-  }
-
   const lists = (first, second, third) => {
 
     const left = sections.slice(first, second);
@@ -103,14 +91,14 @@ const TopComponent = () => {
         {left.map( (section) => (
           <Link to={section.search ? `/section/${section.search}` : section.url} className={styles.link} >
             <li key={section.id}>{section.section}</li>
-          </Link>
+            </Link>
         ))}
       </ul>
       <ul className={styles.list}>
         {right.map( (section) => (
           <Link to={section.search ? `/section/${section.search}` : section.url} className={styles.link} >
             <li key={section.id}>{section.section}</li>
-          </Link>
+            </Link>
         ))}
       </ul>
       </>
@@ -120,9 +108,9 @@ const TopComponent = () => {
   return (
     <>
       {isMenu ? open() : closed() }
-      {isMenu ? menuOpen() : menuClosed()}
+      {isMenu && menuOpen()}
     </>
   )
 }
 
-export default TopComponent;
+export default TopComponentCompresForSection

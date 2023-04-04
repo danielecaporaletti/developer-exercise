@@ -1,17 +1,30 @@
 import Article from './article/Article';
-import ListArticle from './listArticle/ListArticle';
-import OpinionMainArticle from './opinion/OpinionMainArticle';
-import OpinionListArtcle from './opinion/OpinionListArticle'
+import FunnyArticle from './article/FunnyArticle';
+import ColumnArticles from './article/ColumnArticles';
+import OpinionListArtcle from './opinion/OpinionListArticle';
+import styles from './Main.module.css';
 import React from 'react'
 
-const Main = () => {
+const Main = ({mainResults, otherArticle, funnyArticle, opinionArticles}) => {
   return (
-    <>
-        <Article />
-        <ListArticle />
-        //lista di <Article /> senza quelli già usciti.
-        //sulla destra c'è la sezione opinion con 
-    </>
+    <main className={styles.main} >  
+    <div className={styles.left} > 
+      <div className={styles.Article}>
+        <Article mainResults={mainResults}/>
+      </div>
+      <div className={styles.ColumnArticles}>
+        <ColumnArticles otherArticle={otherArticle}/>
+      </div>
+    </div>
+    <div className={styles.right} >
+      <div className={styles.funnyArticle}>
+        <FunnyArticle funnyArticle={funnyArticle} />
+      </div>
+      <div className={styles.OpinionListArtcle}>
+        <OpinionListArtcle opinionArticles={opinionArticles}/>
+      </div>
+    </div>
+    </main>
   )
 }
 

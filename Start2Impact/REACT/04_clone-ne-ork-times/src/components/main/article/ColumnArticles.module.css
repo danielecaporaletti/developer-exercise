@@ -1,0 +1,15 @@
+.columnArticle {
+    position: relative; /* aggiunto per posizionare correttamente il pseudo-elemento */
+    margin-bottom: 25px; /* aggiunge uno spazio di 25px sotto il .ColumnArticles */
+    margin-top: 35px;
+}
+
+.columnArticle::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -17.5px; /* posiziona il pseudo-elemento al centro dello spazio di 25px */
+    height: 1px;
+    background-color: rgb(166, 166, 166); /* colore della linea orizzontale */
+}

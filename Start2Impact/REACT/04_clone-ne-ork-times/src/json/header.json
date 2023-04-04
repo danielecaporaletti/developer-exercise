@@ -1,82 +1,102 @@
 [
     {
         "id": 1,
-        "section": "World"
+        "section": "World",
+        "search": "world"
     },
     {
         "id": 2,
-        "section": "U.S."
+        "section": "U.S.",
+        "search": "us"
     },
     {
         "id": 3,
-        "section": "Politics"
+        "section": "Politics",
+        "search": "politics"
     },
     {
         "id": 4,
-        "section": "N.Y."
+        "section": "N.Y.",
+        "search": "nyregion"
     },
     {
         "id": 5,
-        "section": "Business"
+        "section": "Business",
+        "search": "business"
     },
     {
         "id": 6,
-        "section": "Opinion"
+        "section": "Opinion",
+        "search": "opinion"
     },
     {
         "id": 7,
-        "section": "Science"
+        "section": "Science",
+        "search": "science"
     },
     {
         "id": 8,
-        "section": "Health"
+        "section": "Health",
+        "search": "health"
     },
     {
         "id": 9,
-        "section": "Sports"
+        "section": "Sports",
+        "search": "sports"
     },
     {
         "id": 10,
-        "section": "Arts"
+        "section": "Arts",
+        "search": "arts"
     },
     {
         "id": 11,
-        "section": "Books"
+        "section": "Books",
+        "search": "books"
     },
     {
         "id": 12,
-        "section": "Style"
+        "section": "Style",
+        "url": "https://www.nytimes.com/section/style"
     },
     {
         "id": 13,
-        "section": "Food"
+        "section": "Food",
+        "search": "food"
     },
     {
         "id": 14,
-        "section": "Travel"
+        "section": "Travel",
+        "search": "travel"
     },
     {
         "id": 15,
-        "section": "Magazine"
+        "section": "Magazine",
+        "search": "magazine"
     },
     {
         "id": 16,
-        "section": "Real Estate"
+        "section": "Real Estate",
+        "url": "https://www.nytimes.com/section/realestate"
     },
     {
         "id": 17,
-        "section": "Cooking"
+        "section": "Cooking",
+        "url": "https://cooking.nytimes.com/"
     },
     {
         "id": 18,
-        "section": "The Athletic"
+        "section": "The Athletic",
+        "url": "https://theathletic.com/uk/"
     },
     {
         "id": 19,
-        "section": "Wirecutter"
+        "section": "Wirecutter",
+        "url": "https://www.nytimes.com/wirecutter/"
     },
     {
         "id": 20,
-        "section": "Games"
+        "section": "Games",
+        "url": "https://www.nytimes.com/crosswords"
     }
 ]

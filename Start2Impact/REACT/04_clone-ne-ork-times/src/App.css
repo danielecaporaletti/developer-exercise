@@ -9,12 +9,17 @@
   .App{
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
   }
   .App {
     width: 100%;
     padding-right: 3%;
     padding-left: 3%;
+  }
+
+  .link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
   }
   
   @media (min-width: 1250px) {

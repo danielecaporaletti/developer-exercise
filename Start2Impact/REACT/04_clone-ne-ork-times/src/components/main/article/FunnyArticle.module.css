@@ -1,0 +1,88 @@
+.up {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.up::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -15px; 
+    height: 1px;
+    background-color: rgb(166, 166, 166);
+}
+
+.space {
+    width: 100%;
+    height: 1.5px;
+    margin-bottom: 20px;
+    background-color: rgb(166, 166, 166);
+}
+
+.upTitle {
+    font-family: 'nyt-cheltenham';
+    font-weight: 100;
+    font-size: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.upTitle:hover {
+    color: rgb(70, 70, 70);
+}
+
+.upAbstract {
+    font-size: 13px;
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    color: #2b2b2bbd;
+    line-height: 18.5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.timeRead {
+    font-size: 10px;
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    color: #2b2b2bbd;
+    margin-top: 2.5px;
+    letter-spacing: 0.4px;
+}
+
+.down {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.downLeft {
+    display: flex;
+}
+
+.downRight {
+    display: flex;
+}
+
+.orderOne {
+    order: 1;
+    width: 50%;
+}
+
+.orderTwo {
+    order: 2;
+    width: 50%;
+}
+
+.downTitle {
+    font-family: 'nyt-cheltenham';
+    font-weight: 700;
+    font-size: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.downTitle:hover {
+    color: rgb(70, 70, 70);
+}

@@ -1,0 +1,47 @@
+.titleImg {
+    display: flex;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'nyt-cheltenham';
+    margin-right: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.title:hover {
+    color: rgb(70, 70, 70);
+}
+
+.image {
+    width: 80px;
+    max-height: 500px;
+    object-fit: contain;
+    height: auto;
+    cursor: pointer;
+    margin-bottom: auto;
+}
+
+.text {
+    font-size: 15px;
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    color: rgb(49, 49, 49);
+    margin-right: 15px;
+    line-height: 18.5px;
+    cursor: pointer;
+    line-height: 22px;
+}
+
+.time {
+    margin-top: 3px;
+    font-size: 10px;
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    color: #2b2b2bbd;
+    margin-right: 15px;
+    letter-spacing: 0.4px;
+    margin-bottom: 10px;
+}

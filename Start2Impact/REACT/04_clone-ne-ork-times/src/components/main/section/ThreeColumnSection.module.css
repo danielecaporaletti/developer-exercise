@@ -1,0 +1,23 @@
+.containerTop{
+    display: flex;
+    margin-top: 30px;
+}
+
+.columnOne {
+    width: 50%;
+    padding-right: 15px;
+    margin-right: 15px;
+    border-right: 1px solid rgb(200, 200, 200);
+}
+
+.columnTwo {
+    width: 30%;
+    padding-right: 15px;
+    margin-right: 15px;
+    border-right: 1px solid rgb(200, 200, 200);
+}
+
+.columnThree {
+    width: 20%;
+
+}

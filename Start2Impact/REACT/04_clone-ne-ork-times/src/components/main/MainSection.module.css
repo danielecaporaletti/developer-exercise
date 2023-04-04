@@ -1,0 +1,9 @@
+.title {
+    font-family: 'Libre Franklin';
+    margin-top: 80px;
+    margin-left: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+    font-size: 30px;
+    font-weight: 900;
+}

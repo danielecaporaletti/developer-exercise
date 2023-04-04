@@ -1,0 +1,191 @@
+.divisore {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    border: 1.5px solid black;
+  }
+  
+  .relativeDiv {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1.5px solid rgb(171, 171, 171);
+  }
+  
+  .latest,
+  .search {
+    position: absolute;
+    top: -40px;
+    transform: translateX(-50%);
+    padding: 10px 45px;
+    z-index: 10;
+    cursor: pointer;
+    font-weight: 700;
+  }
+  
+  .latest {
+    left: 150px;
+  }
+  
+  .search {
+    left: 330px;
+  }
+  
+  .active {
+    background-color: white;
+    border: 1px solid rgb(200, 200, 200);
+    border-bottom: 2px solid white;
+  }
+  
+  .inactive {
+    background-color: transparent;
+    border: none;
+  }
+  
+  .icoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 3px;
+  }
+  
+  .ico {
+    width: 15px;
+    height: 15px;
+  }
+  
+  .searchInput {
+    max-width: 90px;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+
+@media(max-width: 550px){
+    .latest {
+        left: 80px;
+    }
+      
+    .search {
+        left: 240px;
+    }
+}
+
+.contain {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+@media(max-width: 1023px){
+    .contain {
+        width: 100%;
+    }
+}
+
+.timeBig{
+    width: 10%;
+
+    margin-top: 3px;
+    font-size: 10px;
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    color: #2b2b2bbd;
+    margin-right: 15px;
+    letter-spacing: 0.4px;
+    margin-bottom: 10px;
+}
+
+.timeSmall {
+    margin-top: 3px;
+    font-size: 10px;
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    color: #2b2b2bbd;
+    margin-right: 15px;
+    letter-spacing: 0.4px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+@media(max-width: 599px){
+    .timeBig {
+        display: none;
+    }
+    .timeSmall {
+        display: inline-block;
+    }
+    .by {
+        display: none;
+    }
+    .contaimerIma {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        overflow: hidden;
+    }
+}
+
+.article {
+    width: 50%;
+}
+
+.title {
+    font-family: 'nyt-cheltenham';
+    font-weight: 100;
+    font-size: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.title:hover {
+    color: rgb(70, 70, 70);
+    text-decoration: underline;
+}
+
+.abstract {
+    font-size: 10px;
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    color: #2b2b2bbd;
+    line-height: 18.5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.by {
+    margin-top: 3px;
+    font-size: 10px;
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    color: #2b2b2bbd;
+    margin-right: 15px;
+    letter-spacing: 0.4px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.image {
+    width: 14rem;
+    max-height: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.contain::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px; 
+    height: 0.7px;
+    background-color: rgb(174, 174, 174);
+}

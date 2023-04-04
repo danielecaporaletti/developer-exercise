@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.text {
+    width: 30%;
+}
+
+.image {
+    width: 50%;
+}
+
+.time {
+    font-size: 10px;
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    color: #2b2b2bbd;
+    margin-top: 5px;
+    letter-spacing: 0.4px;
+}

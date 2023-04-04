@@ -6,6 +6,7 @@ import sections from '../../../json/sections.json';
 import styles from './TopComponentExpanded.module.css';
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import {  Link } from 'react-router-dom';
 
 const TopComponentExpanded = () => {
 
@@ -14,6 +15,7 @@ const TopComponentExpanded = () => {
   const [marketData, setMarketData] = useState({name: '', change: 0});
   const [positiveChange, setPositiveChange] = useState(false);
   const [isSidebar, setIsSidebar] = useState(false);
+  const [query, setQuery] = useState('');
 
   const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
   const dataOggi = new Date().toLocaleDateString('en-US', options);
@@ -21,25 +23,35 @@ const TopComponentExpanded = () => {
   let index = 0;
   const data = ["GSPC", "DJI", "IXIC", "DAX", "CAC", "ASX"];
 
-  const barraDiRicerca = () => {
+  const BarraDiRicerca = () => {
+  
+  
+    const eseguiRicerca = (e) => {
+      e.preventDefault();
+      if (query) {
+        window.location.href = `https://www.nytimes.com/search?query=${query}`;
+      } else {
+        alert('Inserisci qulcosa di valido');
+      }
+    };
+  
     return (
-      <>
-        <div className={styles.searchTop}>
-          <input type='text' placeholder='SEARCH' className={styles.inputMenu} />
-          <button onClick={eseguiRicerca} className={styles.inputButtonCerca}>GO</button>
-        </div>
-      </>
-    )
-  }
-
-  const eseguiRicerca = () => {
-    const query = document.querySelector('.inputMenu').value;
-    if (query) {
-      window.location.href = `https://www.nytimes.com/search?query=${query}`;
-    } else {
-      alert('Inserisci qulcosa di valido');
-    }
-  }
+      <div className={styles.searchTop}>
+        <form onSubmit={eseguiRicerca}>
+          <input
+            type="text"
+            placeholder="SEARCH"
+            className={styles.inputMenu}
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+          />
+          <button type="submit" className={styles.inputButtonCerca}>
+            GO
+          </button>
+        </form>
+      </div>
+    );
+  };
 
   const getIPAddress = async () => {
     const response = await axios.get('https://api.ipify.org?format=json');
@@ -112,46 +124,69 @@ const TopComponentExpanded = () => {
   };
 
   const sidebarOpen = () => {
-
     const first = sections.slice(0, 10);
-    const second = sections.slice(10, 22)
-    const more = sections.slice(22, 42)
-
-    return(
-      <div className={styles.sidebar} onMouseLeave={() => setTimeout( () => setIsSidebar(false), 500)}>
+    const second = sections.slice(10, 22);
+    const more = sections.slice(22, 42);
+  
+    return (
+      <div 
+        className={styles.sidebar} 
+        onMouseLeave={() => setTimeout(() => setIsSidebar(false), 500)}
+      >
         <ul className={styles.sidebarContents}>
-          <li className={styles.sidebarSection}>Home Page</li>
-          { first.map( (section) => {
-            return(
+          <Link to="/" className={styles.link}><li className={styles.sidebarSection}>Home Page</li></Link>
+          {first.map((section) => {
+            return (
+              <Link to={section.search ? `/section/${section.search}` : section.url} className={styles.link} >
               <li key={section.id} className={styles.sidebarSection}>
                 <div>{section.section}</div>
                 <div className={styles.arrow}>&gt;</div>
                 <div className={styles.fumetto}></div>
-                <div className={styles.finestrella}><div className={styles.finestrellaTitle}>{section.section}</div>{section.subsection.map((subsection) => <div className={styles.subsection}>{subsection}</div>)}</div>
+                <div className={styles.finestrella}>
+                  <div className={styles.finestrellaTitle}>{section.section}</div>
+                  {section.subsection.map((subsection) => (
+                    <Link to={subsection.search ? `/section/${subsection.search}` : subsection.url} onClick={(event) => event.stopPropagation()} className={styles.link}>
+                      <div className={styles.subsection}>{subsection.section}</div>
+                    </Link>
+                  ))}
+                </div>
               </li>
+              </Link>
             );
           })}
           <div className={styles.separa}></div>
-          { second.map( (section) => {
+          {second.map((section) => {
             return (
+              <Link to={section.search ? `/section/${section.search}` : section.url} className={styles.link}>
               <li key={section.id} className={styles.sidebarSection}>
                 <div>{section.section}</div>
-                {section.subsection!==undefined && 
+                {section.subsection !== undefined && (
                   <>
-                  <div className={styles.arrow}>&gt;</div>
-                  <div className={styles.fumetto}></div>
-                  <div className={styles.finestrella}><div className={styles.finestrellaTitle}>{section.section}</div>{section.subsection.map((subsection) => <div className={styles.subsection}>{subsection}</div>)}</div>
+                    <div className={styles.arrow}>&gt;</div>
+                    <div className={styles.fumetto}></div>
+                    <div className={styles.finestrella}>
+                      <div className={styles.finestrellaTitle}>{section.section}</div>
+                      {section.subsection.map((subsection) => (
+                        <Link to={subsection.search ? `/section/${subsection.search}` : subsection.url} onClick={(event) => event.stopPropagation()} className={styles.link}>
+                          <div className={styles.subsection}>{subsection.section}</div>
+                        </Link>
+                      ))}
+                    </div>
                   </>
-                }
+                )}
               </li>
-            )
+              </Link>
+            );
           })}
           <div className={styles.separa}></div>
-          <li className={styles.sidebarSection}><div>More</div><div className={styles.arrow}>&gt;</div></li>
+          <li className={styles.sidebarSection}>
+            <div>More</div>
+            <div className={styles.arrow}>&gt;</div>
+          </li>
         </ul>
       </div>
-    )
-  }
+    );
+  };
 
   useEffect(() => {
     fetchWeatherData();
@@ -176,10 +211,10 @@ const TopComponentExpanded = () => {
           <button  onClick={() => setIsSidebar(!isSidebar)} className={styles.buttonMenuIcon}>
             <img src={menuIcon} alt='' className={styles.imgMenuIcon} />
           </button>
-          <button onClick={() => setIsSearch(!isSearch)} className={`${styles.buttonSearchIcon} ${isSearch ? styles['buttonSearchIcon-active'] : ''}`}>
+          <button onClick={() => setIsSearch(!isSearch)} className={`${styles.buttonSearchIcon} ${isSearch ? styles['buttomSearchIconActive'] : ''}`}>
             <img src={searchIcon} alt='' className={styles.imgSearchIcon} />
           </button>
-          {isSearch && barraDiRicerca()}
+          {isSearch && BarraDiRicerca()}
         </div>
         <div className={styles.headerTopRight}>
           <a href='https://myaccount.nytimes.com/auth/enter-email' className={styles.bottomLogIn} >LOG IN</a>
@@ -188,7 +223,9 @@ const TopComponentExpanded = () => {
 
       <div className={styles.headerMiddle}>
         <div className={styles.dataOggi}>{dataOggi}<br/><div>Today’s Paper</div></div>
-        <img src={NewYorkTimes} alt='' className={styles.imgNewYorkTimesIcon} />
+        <Link to='/' className={styles.link}>
+          <img src={NewYorkTimes} alt='' className={styles.imgNewYorkTimesIcon} />
+        </Link>
         <div className={styles.headerMiddleRight}>
           <div className={styles.headerMiddleRightTop} >
             <img src={`https://openweathermap.org/img/wn/${meteo.icon}.png`} className={styles.meteo}/>
@@ -202,16 +239,20 @@ const TopComponentExpanded = () => {
 
       <div className={styles.headerBottom}>
         { ( () => {
-          const left = headerList.slice(0, 17);
-          const right = headerList.slice(17, 21);
+          const left = headerList.slice(0, 16);
+          const right = headerList.slice(16, 21);
           return (
             <>
               {left.map( (section) => (
-                <div key={section.id} className={styles.section}>{section.section}</div>
+                <Link to={section.search ? `/section/${section.search}` : section.url} className={styles.link} >
+                  <div key={section.id} className={styles.section}>{section.section}</div>
+                </Link>
               ))}
               <div className={styles.separator}></div>
               {right.map( (section) => (
-                <div key={section.id} className={styles.section}>{section.section}</div>
+                <Link to={section.search ? `/section/${section.search}` : section.url} className={styles.link} >
+                  <div key={section.id} className={styles.section}>{section.section}</div>
+                </Link>
               ))}
             </>
           )
